@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生活记录 - 研究生个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 引入动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div class="site-container">
+        <!-- 导航菜单 -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">GQQ</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">主页</a>
+                <a href="resume.html">简历</a>
+                <a href="projects.html">项目</a>
+                <a href="photography.html">摄影</a>
+                <a href="life.html" class="active">生活</a>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+
+        <!-- 生活记录内容 -->
+        <main class="life-container animate__animated animate__fadeIn">
+            <header class="page-header">
+                <h1>生活记录</h1>
+                <p class="subtitle">探索·思考·记录</p>
+            </header>
+
+            <div class="life-categories">
+                <button class="category-btn active" data-category="all">全部</button>
+                <button class="category-btn" data-category="travel">旅行</button>
+                <button class="category-btn" data-category="thoughts">随笔</button>
+                <button class="category-btn" data-category="campus">校园</button>
+            </div>
+
+            <div class="life-posts">
+                <!-- 旅行类别 -->
+                <article class="post-card travel">
+                    <div class="post-image" style="background-image: url('assets/travel1.jpg')"></div>
+                    <div class="post-content">
+                        <div class="post-date">2023年10月12日</div>
+                        <h2 class="post-title">西藏行记：在世界屋脊的十天</h2>
+                        <p class="post-excerpt">
+                            十月初，我踏上了前往西藏的旅程。蓝天、白云、雪山、湖泊，这里的一切都如此纯净。
+                            在高原上的每一天都充满了惊喜和感动...
+                        </p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <article class="post-card travel">
+                    <div class="post-image" style="background-image: url('assets/travel2.jpg')"></div>
+                    <div class="post-content">
+                        <div class="post-date">2023年7月5日</div>
+                        <h2 class="post-title">江南小镇：雨巷中的邂逅</h2>
+                        <p class="post-excerpt">
+                            夏日的江南，细雨绵绵。漫步在乌镇的小巷中，青石板路被雨水洗得发亮，两旁的老房子静静诉说着千年的故事...
+                        </p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <!-- 随笔类别 -->
+                <article class="post-card thoughts">
+                    <div class="post-content full-width">
+                        <div class="post-date">2023年9月18日</div>
+                        <h2 class="post-title">关于研究生科研的一些思考</h2>
+                        <p class="post-excerpt">
+                            进入研究生阶段已有一年，回顾这一年的科研经历，有欣喜，也有迷茫。科研之路从来不是一帆风顺的，
+                            它充满了挑战和未知。然而，正是这些挑战和未知，让科研变得有趣而有意义...
+                        </p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <article class="post-card thoughts">
+                    <div class="post-content full-width">
+                        <div class="post-date">2023年6月30日</div>
+                        <h2 class="post-title">技术与人文的平衡</h2>
+                        <p class="post-excerpt">
+                            作为一名计算机专业的学生，我常常思考技术与人文的关系。技术的发展固然重要，
+                            但如果缺乏人文关怀，技术可能会失去它的灵魂和价值...
+                        </p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <!-- 校园类别 -->
+                <article class="post-card campus">
+                    <div class="post-image" style="background-image: url('assets/campus1.jpg')"></div>
+                    <div class="post-content">
+                        <div class="post-date">2023年4月15日</div>
+                        <h2 class="post-title">春日校园：樱花与未名湖</h2>
+                        <p class="post-excerpt">
+                            四月的校园，樱花盛开。漫步在未名湖畔，粉色的花瓣随风飘落，在湖面上形成一道美丽的风景线...
+                        </p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <article class="post-card campus">
+                    <div class="post-image" style="background-image: url('assets/campus2.jpg')"></div>
+                    <div class="post-content">
+                        <div class="post-date">2022年12月25日</div>
+                        <h2 class="post-title">实验室的圣诞节</h2>
+                        <p class="post-excerpt">
+                            这是我在研究生实验室度过的第一个圣诞节。虽然大家都忙于科研，但我们还是抽出时间，
+                            为实验室布置了一棵小小的圣诞树...
+                        </p>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 视频分享 -->
+            <section class="video-sharing">
+                <h2>视频记录</h2>
+                <p class="subtitle">用影像记录生活中的精彩瞬间</p>
+                
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumbnail" style="background-image: url('assets/video1.jpg')">
+                            <div class="play-icon"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>校园的四季变化</h3>
+                            <p>使用延时摄影记录下的校园四季风光</p>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail" style="background-image: url('assets/video2.jpg')">
+                            <div class="play-icon"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>实验室的日常</h3>
+                            <p>记录我们实验室的研究生活和欢乐时光</p>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail" style="background-image: url('assets/video3.jpg')">
+                            <div class="play-icon"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>西藏行vlog</h3>
+                            <p>高原上的壮美风景和独特文化体验</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">GQQ</div>
+                <div class="footer-links">
+                    <a href="mailto:example@pku.edu.cn">example@pku.edu.cn</a>
+                    <a href="https://github.com/username" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2023 戈沁沁. 版权所有
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

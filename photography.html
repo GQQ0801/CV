@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影作品 - 研究生个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 引入动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- 引入灯箱效果 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css" />
+</head>
+<body>
+    <div class="site-container">
+        <!-- 导航菜单 -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">GQQ</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">主页</a>
+                <a href="resume.html">简历</a>
+                <a href="projects.html">项目</a>
+                <a href="photography.html" class="active">摄影</a>
+                <a href="life.html">生活</a>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+
+        <!-- 摄影内容 -->
+        <main class="photography-container animate__animated animate__fadeIn">
+            <header class="page-header">
+                <h1>摄影作品</h1>
+                <p class="subtitle">记录美好瞬间，分享独特视角</p>
+            </header>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="nature">自然风光</button>
+                <button class="filter-btn" data-filter="city">城市建筑</button>
+                <button class="filter-btn" data-filter="portrait">人像摄影</button>
+            </div>
+
+            <div id="photo-gallery" class="photo-gallery">
+                <!-- 自然风光分类 -->
+                <div class="gallery-item nature" data-src="assets/nature1.jpg">
+                    <div class="gallery-image" style="background-image: url('assets/nature1.jpg')"></div>
+                    <div class="gallery-caption">
+                        <h3>山间晨雾</h3>
+                        <p>2023年夏 · 黄山</p>
+                    </div>
+                </div>
+                <div class="gallery-item nature" data-src="assets/nature2.jpg">
+                    <div class="gallery-image" style="background-image: url('assets/nature2.jpg')"></div>
+                    <div class="gallery-caption">
+                        <h3>海边日落</h3>
+                        <p>2022年冬 · 三亚</p>
+                    </div>
+                </div>
+                <div class="gallery-item nature" data-src="assets/nature3.jpg">
+                    <div class="gallery-image" style="background-image: url('assets/nature3.jpg')"></div>
+                    <div class="gallery-caption">
+                        <h3>雪山映湖</h3>
+                        <p>2022年春 · 西藏</p>
+                    </div>
+                </div>
+                <div class="gallery-item nature" data-src="assets/nature4.jpg">
+                    <div class="gallery-image" style="background-image: url('assets/nature4.jpg')"></div>
+                    <div class="gallery-caption">
+                        <h3>秋林深处</h3>
+                        <p>2023年秋 · 长白山</p>
+                    </div>
+                </div>
+
+                <!-- 城市建筑分类 -->
+                <div class="gallery-item city" data-src="assets/city1.jpg">
+                    <div class="gallery-image" style="background-image: url('assets/city1.jpg')"></div>
+                    <div class="gallery-caption">
+                        <h3>城市夜景</h3>
+                        <p>2023年 · 上海</p>
+                    </div>
+                </div>
+                <div class="gallery-item city" data-src="assets/city2.jpg">
+                    <div class="gallery-image" style="background-image: url('assets/city2.jpg')"></div>
+                    <div class="gallery-caption">
+                        <h3>古巷晨光</h3>
+                        <p>2022年 · 苏州</p>
+                    </div>
+                </div>
+                <div class="gallery-item city" data-src="assets/city3.jpg">
+                    <div class="gallery-image" style="background-image: url('assets/city3.jpg')"></div>
+                    <div class="gallery-caption">
+                        <h3>现代建筑</h3>
+                        <p>2023年 · 深圳</p>
+                    </div>
+                </div>
+
+                <!-- 人像摄影分类 -->
+                <div class="gallery-item portrait" data-src="assets/portrait1.jpg">
+                    <div class="gallery-image" style="background-image: url('assets/portrait1.jpg')"></div>
+                    <div class="gallery-caption">
+                        <h3>光影人像</h3>
+                        <p>2023年 · 工作室</p>
+                    </div>
+                </div>
+                <div class="gallery-item portrait" data-src="assets/portrait2.jpg">
+                    <div class="gallery-image" style="background-image: url('assets/portrait2.jpg')"></div>
+                    <div class="gallery-caption">
+                        <h3>街头瞬间</h3>
+                        <p>2022年 · 北京</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="photography-about">
+                <h2>关于我的摄影</h2>
+                <p>
+                    摄影对我来说是一种表达方式，也是一种生活态度。我喜欢通过镜头捕捉那些稍纵即逝的美好瞬间，
+                    记录下生活中的温暖与感动。在繁忙的学习和研究之余，摄影让我能够以不同的视角观察世界，
+                    发现平凡中的不平凡。
+                </p>
+                <p>
+                    我的摄影作品主要涵盖自然风光、城市建筑和人像三个方向，希望通过这些照片分享我眼中的美丽世界。
+                    如果你也对摄影感兴趣，欢迎与我交流心得！
+                </p>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">GQQ</div>
+                <div class="footer-links">
+                    <a href="mailto:example@pku.edu.cn">example@pku.edu.cn</a>
+                    <a href="https://github.com/username" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2023 戈沁沁. 版权所有
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

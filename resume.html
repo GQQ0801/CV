@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 - 研究生个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 引入动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div class="site-container">
+        <!-- 导航菜单 -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">GQQ</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">主页</a>
+                <a href="resume.html" class="active">简历</a>
+                <a href="projects.html">项目</a>
+                <a href="photography.html">摄影</a>
+                <a href="life.html">生活</a>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+
+        <!-- 简历内容 -->
+        <main class="resume-container animate__animated animate__fadeIn">
+            <section class="resume-header">
+                <div class="profile-image">
+                    <div class="profile-placeholder"></div>
+                </div>
+                <div class="profile-info">
+                    <h1>戈沁沁</h1>
+                    <p class="subtitle">北京大学研究生 | 2026届 | 可实习6个月</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <a href="mailto:example@pku.edu.cn">example@pku.edu.cn</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">🔗</span>
+                            <a href="https://github.com/username" target="_blank">github.com/username</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📱</span>
+                            <span>+86 138 0000 0000</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resume-section">
+                <h2>教育背景</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - 2026</div>
+                        <div class="timeline-content">
+                            <h3>北京大学</h3>
+                            <p>硕士研究生</p>
+                            <p>预计毕业时间：2026年</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2019 - 2023</div>
+                        <div class="timeline-content">
+                            <h3>本科院校</h3>
+                            <p>本科学位</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resume-section">
+                <h2>专业技能</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>编程语言</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>机器学习/深度学习</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Transformers</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web开发</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Flask</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>其他技能</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resume-section">
+                <h2>实习经历</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022.6 - 2022.9</div>
+                        <div class="timeline-content">
+                            <h3>百度 - 自然语言处理研究实习生</h3>
+                            <p>负责改进中文预训练语言模型，提升了模型在多个下游任务上的表现。</p>
+                            <ul>
+                                <li>设计并实现了一种新的预训练任务，提高了模型对长文本的理解能力</li>
+                                <li>优化了数据处理流程，将训练速度提升了30%</li>
+                                <li>合作撰写了一篇会议论文，被EMNLP 2022录用</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021.7 - 2021.9</div>
+                        <div class="timeline-content">
+                            <h3>腾讯 - 算法实习生</h3>
+                            <p>在腾讯广告团队实习，负责开发点击率预测模型。</p>
+                            <ul>
+                                <li>改进了特征工程流程，提高了模型准确度</li>
+                                <li>实现了模型的A/B测试框架，评估了新算法的效果</li>
+                                <li>优化了推荐系统的实时计算模块，降低了响应时间</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resume-section">
+                <h2>获奖情况</h2>
+                <div class="awards">
+                    <div class="award-item">
+                        <div class="award-year">2022</div>
+                        <div class="award-content">
+                            <h3>国家奖学金</h3>
+                            <p>教育部颁发的最高荣誉奖学金</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-year">2021</div>
+                        <div class="award-content">
+                            <h3>ACM-ICPC全国大学生程序设计竞赛</h3>
+                            <p>银牌</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-year">2020</div>
+                        <div class="award-content">
+                            <h3>"互联网+"创新创业大赛</h3>
+                            <p>校级金奖</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">GQQ</div>
+                <div class="footer-links">
+                    <a href="mailto:example@pku.edu.cn">example@pku.edu.cn</a>
+                    <a href="https://github.com/username" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2023 戈沁沁. 版权所有
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
